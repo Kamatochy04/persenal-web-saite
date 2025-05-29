@@ -1,0 +1,162 @@
+/* In Progress Section Styles */
+.in-progress-section {
+  padding: 6rem 0;
+  background-color: var(--darker-bg);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.in-progress-card {
+  background-color: var(--dark-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(110, 69, 226, 0.3);
+}
+
+.in-progress-image {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.in-progress-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.in-progress-card:hover .in-progress-image img {
+  opacity: 1;
+}
+
+.progress-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: rgba(110, 69, 226, 0.9);
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.in-progress-content {
+  padding: 2rem;
+}
+
+.in-progress-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.progress-tech {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.tech-badge {
+  background-color: rgba(110, 69, 226, 0.1);
+  color: var(--accent-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.in-progress-content p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.progress-status {
+  margin-bottom: 2rem;
+}
+
+.status-bar {
+  height: 6px;
+  background-color: rgba(110, 69, 226, 0.2);
+  border-radius: 3px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.status-progress {
+  height: 100%;
+  background-color: var(--accent-color);
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.progress-status span {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.progress-links .btn {
+  padding: 0.7rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-outline {
+  background: none;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  transition: var(--transition);
+}
+
+.btn-outline:hover {
+  background-color: rgba(110, 69, 226, 0.1);
+}
+
+.btn-outline:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  border-color: var(--text-secondary);
+  color: var(--text-secondary);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .in-progress-image {
+    height: 250px;
+  }
+
+  .in-progress-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .in-progress-image {
+    height: 200px;
+  }
+
+  .in-progress-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .in-progress-content p {
+    font-size: 1rem;
+  }
+}

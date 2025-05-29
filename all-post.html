@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Блог Андрея Валюка | Frontend разработчика</title>
+    <link rel="stylesheet" href="./src/styles/style.scss" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="/" class="logo">
+          <div class="logo-icon">AV</div>
+          <span class="logo-text">Андрей Валюк</span>
+        </a>
+
+        <nav class="desktop-nav">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="portfolio.html" class="nav-link">Портфолио</a>
+              <div class="sections-dropdown">
+                <div class="sections-container">
+                  <h3 class="sections-title">Разделы портфолио</h3>
+                  <ul class="sections-list">
+                    <li>
+                      <a href="portfolio.html#web-projects" class="section-link"
+                        >Веб-проекты</a
+                      >
+                    </li>
+                    <li>
+                      <a href="portfolio.html#mobile-apps" class="section-link"
+                        >Мобильные приложения</a
+                      >
+                    </li>
+                    <li>
+                      <a href="portfolio.html#designs" class="section-link"
+                        >Дизайны</a
+                      >
+                    </li>
+                    <li>
+                      <a href="portfolio.html#testimonials" class="section-link"
+                        >Отзывы</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">Обо мне</a>
+              <div class="sections-dropdown">
+                <div class="sections-container">
+                  <h3 class="sections-title">Разделы "Обо мне"</h3>
+                  <ul class="sections-list">
+                    <li>
+                      <a href="about.html#skills" class="section-link"
+                        >Навыки</a
+                      >
+                    </li>
+                    <li>
+                      <a href="about.html#experience" class="section-link"
+                        >Опыт</a
+                      >
+                    </li>
+                    <li>
+                      <a href="about.html#education" class="section-link"
+                        >Образование</a
+                      >
+                    </li>
+                    <li>
+                      <a href="about.html#hobbies" class="section-link"
+                        >Увлечения</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Блог</a>
+              <div class="sections-dropdown">
+                <div class="sections-container">
+                  <h3 class="sections-title">Категории блога</h3>
+                  <ul class="sections-list">
+                    <li>
+                      <a href="blog.html#tutorials" class="section-link"
+                        >Туториалы</a
+                      >
+                    </li>
+                    <li>
+                      <a href="blog.html#thoughts" class="section-link"
+                        >Размышления</a
+                      >
+                    </li>
+                    <li>
+                      <a href="blog.html#news" class="section-link">Новости</a>
+                    </li>
+                    <li>
+                      <a href="blog.html#case-studies" class="section-link"
+                        >Кейсы</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="burger-menu">
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="blog-welcome">
+      <div class="container">
+        <div class="welcome-content">
+          <h1>Добро пожаловать в мой блог</h1>
+          <p class="subtitle">
+            Здесь я делюсь знаниями, опытом и свежими новостями из мира
+            фронтенд-разработки
+          </p>
+          <a href="#blog-content" class="scroll-down-btn">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 10L12 15L17 10"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog-content" class="blog-main">
+      <div class="container">
+        <div class="blog-tabs">
+          <button class="tab-btn active" data-tab="news">Новости</button>
+          <button class="tab-btn" data-tab="articles">Статьи</button>
+        </div>
+
+        <div class="tab-content active" id="news-content">
+          <div class="news-grid">
+            <article class="news-card">
+              <div class="news-meta">
+                <span class="news-date">15.10.2023</span>
+                <span class="news-category">Обновление</span>
+              </div>
+              <h3 class="news-title">Вышел React 19: что нового?</h3>
+              <p class="news-excerpt">
+                Команда React анонсировала новую версию фреймворка с
+                долгожданными изменениями в работе хуков и улучшенной
+                производительностью.
+              </p>
+              <a href="#" class="read-more">Читать полностью →</a>
+            </article>
+
+            <article class="news-card">
+              <div class="news-meta">
+                <span class="news-date">10.10.2023</span>
+                <span class="news-category">Событие</span>
+              </div>
+              <h3 class="news-title">Конференция FrontendConf 2023</h3>
+              <p class="news-excerpt">
+                Итоги главного фронтенд-события года: основные тренды, доклады и
+                впечатления от участников.
+              </p>
+              <a href="#" class="read-more">Читать полностью →</a>
+            </article>
+
+            <article class="news-card">
+              <div class="news-meta">
+                <span class="news-date">05.10.2023</span>
+                <span class="news-category">Инструмент</span>
+              </div>
+              <h3 class="news-title">Vite 4.0 - новый стандарт сборки</h3>
+              <p class="news-excerpt">
+                Вышла новая версия сборщика Vite с поддержкой WebAssembly и
+                улучшенной производительностью.
+              </p>
+              <a href="#" class="read-more">Читать полностью →</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="tab-content" id="articles-content">
+          <div class="articles-grid">
+            <article class="article-card">
+              <img
+                src="https://via.placeholder.com/400x225/1a1a1a/6e45e2?text=React"
+                alt="React Hooks"
+                class="article-image"
+              />
+              <div class="article-body">
+                <h3 class="article-title">Полное руководство по React Hooks</h3>
+                <p class="article-excerpt">
+                  Разбираем все основные хуки React, их применение и лучшие
+                  практики использования в реальных проектах.
+                </p>
+                <div class="article-footer">
+                  <span class="article-date">15.10.2023</span>
+                  <a href="#" class="read-more">Читать →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-card">
+              <img
+                src="https://via.placeholder.com/400x225/1a1a1a/6e45e2?text=TypeScript"
+                alt="TypeScript"
+                class="article-image"
+              />
+              <div class="article-body">
+                <h3 class="article-title">
+                  TypeScript для React-разработчиков
+                </h3>
+                <p class="article-excerpt">
+                  Как правильно типизировать React-компоненты и хуки. Разбираем
+                  сложные случаи и полезные паттерны.
+                </p>
+                <div class="article-footer">
+                  <span class="article-date">10.10.2023</span>
+                  <a href="#" class="read-more">Читать →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-card">
+              <img
+                src="https://via.placeholder.com/400x225/1a1a1a/6e45e2?text=Vue"
+                alt="Vue 3"
+                class="article-image"
+              />
+              <div class="article-body">
+                <h3 class="article-title">Переход с Vue 2 на Vue 3</h3>
+                <p class="article-excerpt">
+                  Все, что нужно знать о миграции на новую версию Vue: изменения
+                  в API, композиция и новые возможности.
+                </p>
+                <div class="article-footer">
+                  <span class="article-date">05.10.2023</span>
+                  <a href="#" class="read-more">Читать →</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="pagination">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn next">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabBtns = document.querySelectorAll(".tab-btn");
+        const tabContents = document.querySelectorAll(".tab-content");
+
+        tabBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            tabBtns.forEach((btn) => btn.classList.remove("active"));
+            tabContents.forEach((content) =>
+              content.classList.remove("active")
+            );
+
+            btn.classList.add("active");
+            const tabId = btn.dataset.tab;
+            document.getElementById(`${tabId}-content`).classList.add("active");
+          });
+        });
+
+        document
+          .querySelector(".scroll-down-btn")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector("#blog-content").scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+
+        const pageBtns = document.querySelectorAll(".page-btn");
+        pageBtns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            pageBtns.forEach((b) => b.classList.remove("active"));
+            this.classList.add("active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

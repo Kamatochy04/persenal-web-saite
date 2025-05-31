@@ -5,7 +5,7 @@
       "destination": "/experience.html"
     },
     {
-      "source": "/(.*)",
+      "source": "/",
       "destination": "/index.html"
     }
   ]

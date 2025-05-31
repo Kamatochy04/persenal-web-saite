@@ -1,6 +1,14 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
   "routes": [
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/experience", "dest": "/experience.html" }
+    {
+      "src": "/experience",
+      "dest": "/experience.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
   ]
 }

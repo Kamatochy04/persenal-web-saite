@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       href="./src/assets/favicon/Logo.svg"
@@ -13,29 +12,980 @@
     <link rel="stylesheet" href="./src/styles/style.scss" />
   </head>
   <body>
+    <header>
+      <div class="header-container">
+        <a href="#" class="logo inactive">
+          <div class="logo-icon">AV</div>
+          <span class="logo-text">Andrey Valiuk</span>
+        </a>
+
+        <nav class="desktop-nav">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link inactive">Портфолио</a>
+              <div class="sections-dropdown">
+                <div class="sections-container">
+                  <h3 class="sections-title">Разделы портфолио</h3>
+                  <ul class="sections-list">
+                    <li>
+                      <a href="#" class="section-link inactive">Веб-проекты</a>
+                    </li>
+                    <li>
+                      <a href="#" class="section-link inactive"
+                        >Мобильные приложения</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="section-link inactive">Дизайны</a>
+                    </li>
+                    <li>
+                      <a href="#" class="section-link inactive">Отзывы</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link inactive">Обо мне</a>
+              <div class="sections-dropdown">
+                <div class="sections-container">
+                  <h3 class="sections-title">Разделы "Обо мне"</h3>
+                  <ul class="sections-list">
+                    <li>
+                      <a href="#" class="section-link inactive">Навыки</a>
+                    </li>
+                    <li>
+                      <a href="#" class="section-link inactive">Опыт</a>
+                    </li>
+                    <li>
+                      <a href="#" class="section-link inactive">Образование</a>
+                    </li>
+                    <li>
+                      <a href="#" class="section-link inactive">Увлечения</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link inactive">Блог</a>
+              <div class="sections-dropdown">
+                <div class="sections-container">
+                  <h3 class="sections-title">Категории блога</h3>
+                  <ul class="sections-list">
+                    <li>
+                      <a href="#" class="section-link inactive">Туториалы</a>
+                    </li>
+                    <li>
+                      <a href="#" class="section-link inactive">Размышления</a>
+                    </li>
+                    <li>
+                      <a href="#" class="section-link inactive">Новости</a>
+                    </li>
+                    <li>
+                      <a href="#" class="section-link inactive">Кейсы</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="/experience" class="nav-link">Опыт работы</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="burger-menu">
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu">
+      <ul class="mobile-nav">
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-link inactive">Портфолио</a>
+          <button class="mobile-sections-btn">
+            <span>Разделы</span>
+            <svg
+              width="12"
+              height="8"
+              viewBox="0 0 12 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1.5L6 6.5L11 1.5"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <ul class="mobile-sections-list">
+            <li>
+              <a href="#" class="mobile-section-link inactive">Веб-проекты</a>
+            </li>
+            <li>
+              <a href="#" class="mobile-section-link inactive"
+                >Мобильные приложения</a
+              >
+            </li>
+            <li>
+              <a href="#" class="mobile-section-link inactive">Дизайны</a>
+            </li>
+            <li>
+              <a href="#" class="mobile-section-link inactive">Отзывы</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-link inactive">Обо мне</a>
+          <button class="mobile-sections-btn">
+            <span>Разделы</span>
+            <svg
+              width="12"
+              height="8"
+              viewBox="0 0 12 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1.5L6 6.5L11 1.5"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <ul class="mobile-sections-list">
+            <li>
+              <a href="#" class="mobile-section-link inactive">Навыки</a>
+            </li>
+            <li>
+              <a href="#" class="mobile-section-link inactive">Опыт</a>
+            </li>
+            <li>
+              <a href="#" class="mobile-section-link inactive">Образование</a>
+            </li>
+            <li>
+              <a href="#" class="mobile-section-link inactive">Увлечения</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-link inactive">Блог</a>
+          <button class="mobile-sections-btn">
+            <span>Разделы</span>
+            <svg
+              width="12"
+              height="8"
+              viewBox="0 0 12 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1.5L6 6.5L11 1.5"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <ul class="mobile-sections-list">
+            <li>
+              <a href="#" class="mobile-section-link inactive">Туториалы</a>
+            </li>
+            <li>
+              <a href="#" class="mobile-section-link inactive">Размышления</a>
+            </li>
+            <li>
+              <a href="#" class="mobile-section-link inactive">Новости</a>
+            </li>
+            <li>
+              <a href="#" class="mobile-section-link inactive">Кейсы</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="/experience" class="nav-link">Опыт работы</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="overlay"></div>
     <section class="experience">
       <div class="experience-wrapper">
         <div class="experience-company">
-          <div class="experience-block">
+          <div
+            class="experience-block"
+            onclick="toggleSection('company-details')"
+          >
             <h2 class="experience-title">Компании</h2>
           </div>
         </div>
       </div>
 
-      <div class="experience-line">
-        <div class="experience-sercle">
-          <h3>Опыт</h3>
-          <p>Мой опыт работы в IT-компаниях и реализованные проекты</p>
-        </div>
-      </div>
-
       <div class="experience-wrapper">
         <div class="experience-projects">
-          <div class="experience-block">
+          <div
+            class="experience-block"
+            onclick="toggleSection('project-details')"
+          >
             <h2 class="experience-title">Проекты</h2>
           </div>
         </div>
       </div>
+
+      <div class="experience-overlay" id="experience-overlay"></div>
+
+      <div class="experience-details" id="company-details">
+        <button class="close-button" onclick="closeSection('company-details')">
+          Закрыть
+        </button>
+        <div class="details-content">
+          <h3>Мои компании в которых я работал</h3>
+          <div class="company-cards">
+            <div class="company-card">
+              <div class="top">
+                <img
+                  src="./src/assets/compani_img/modsen.jpg"
+                  alt="Modsen"
+                  class="company-logo"
+                />
+                <div class="top__descr">
+                  <h4>Modsen Software</h4>
+                  <p class="company-period">Июнь 2021 - Март 2023</p>
+                  <p class="company-description">
+                    Международная IT-компания, предоставляющая полный цикл
+                    разработки программного обеспечения. Специализация:
+                    блокчейн, финтех, корпоративные решения.
+                  </p>
+                </div>
+              </div>
+
+              <div class="company-details">
+                <p class="company-role">
+                  <strong>Роль:</strong> Frontend Developer (React)
+                </p>
+                <div class="company-tech">
+                  <strong>Технологии:</strong>
+                  <div class="company-tech-wrapper">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Redux</span>
+                    <span class="tech-tag">GraphQL</span>
+                    <span class="tech-tag">Material UI</span>
+                  </div>
+                </div>
+
+                <p class="company-tasks">
+                  <strong>Обязанности:</strong> Разработка SPA для
+                  финтех-стартапов, создание компонентной библиотеки,
+                  оптимизация производительности, код-ревью, участие в
+                  архитектурных решениях.
+                </p>
+              </div>
+
+              <a
+                href="https://www.modsen-software.com/"
+                target="_blank"
+                class="company-link"
+              >
+                Сайт компании
+              </a>
+            </div>
+
+            <div class="company-card">
+              <div class="top">
+                <img
+                  src="./src/assets/compani_img/itHart.jpg"
+                  alt="ITHart"
+                  class="company-logo"
+                />
+                <div class="top__descr">
+                  <h4>ITHart Group</h4>
+                  <p class="company-period">Апрель 2019 - Май 2021</p>
+                  <p class="company-description">
+                    Крупная IT-компания в Восточной Европе с офисами в 5
+                    странах. Специализация: enterprise-решения, e-commerce,
+                    мобильная разработка.
+                  </p>
+                </div>
+              </div>
+
+              <div class="company-details">
+                <p class="company-role">
+                  <strong>Роль:</strong> JavaScript Developer
+                </p>
+                <div class="company-tech">
+                  <strong>Технологии:</strong>
+                  <div class="company-tech-wrapper">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Vue.js</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">MongoDB</span>
+                  </div>
+                </div>
+
+                <p class="company-tasks">
+                  <strong>Обязанности:</strong> Разработка fullstack решений для
+                  корпоративных клиентов, создание REST API, интеграция с
+                  платежными системами, разработка админ-панелей.
+                </p>
+              </div>
+
+              <a
+                href="https://itechartgroup.by/"
+                target="_blank"
+                class="company-link"
+              >
+                Сайт компании
+              </a>
+            </div>
+
+            <!-- Abyron -->
+            <div class="company-card">
+              <div class="top">
+                <img
+                  src="./src/assets/compani_img/abyron.jpg"
+                  alt="Abyron"
+                  class="company-logo"
+                />
+                <div class="top__descr">
+                  <h4>Abyron</h4>
+                  <p class="company-period">Сентябрь 2017 - Март 2019</p>
+                  <p class="company-description">
+                    Российская IT-компания, специализирующаяся на веб-разработке
+                    и цифровом маркетинге. Клиенты из банковского сектора и
+                    ритейла.
+                  </p>
+                </div>
+              </div>
+
+              <div class="company-details">
+                <p class="company-role">
+                  <strong>Роль:</strong> Junior Frontend Developer
+                </p>
+                <div class="company-tech">
+                  <strong>Технологии:</strong>
+                  <div class="company-tech-wrapper">
+                    <span class="tech-tag">HTML/CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">jQuery</span>
+                    <span class="tech-tag">Bootstrap</span>
+                    <span class="tech-tag">PHP</span>
+                  </div>
+                </div>
+
+                <p class="company-tasks">
+                  <strong>Обязанности:</strong> Верстка лендингов и
+                  корпоративных сайтов, разработка UI компонентов, адаптация под
+                  мобильные устройства, работа с CMS (Bitrix, WordPress).
+                </p>
+              </div>
+
+              <a href="https://abyron.ru/" target="_blank" class="company-link">
+                Сайт компании
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-details" id="project-details">
+        <button class="close-button" onclick="closeSection('project-details')">
+          Закрыть
+        </button>
+        <div class="details-content">
+          <h3>Мои проекты</h3>
+          <p>Список реализованных проектов:</p>
+          <div class="details-content-wrapper">
+            <div class="project-card">
+              <div class="project-card__image-container">
+                <img
+                  src="./src/assets/project_img/flowers.jpg"
+                  alt="Цветочный магазин"
+                  class="project-card__image-container__image"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__content__title">
+                  Цветочный магазин "Флора"
+                </h3>
+                <p class="project-card__content__description">
+                  Сайт местного цветочного магазина с каталогом товаров, простой
+                  корзиной и формой заказа. Адаптивный дизайн для мобильных
+                  устройств.
+                </p>
+                <div class="project-card__content__tech-stack">
+                  <div class="project-card__content__tech-stack__item">
+                    <span class="project-card__content__tech-stack__item__label"
+                      >Frontend:</span
+                    >
+                    <span class="project-card__tech-tag">HTML/CSS</span>
+                    <span class="project-card__tech-tag">JavaScript</span>
+                  </div>
+                  <div class="project-card__content__tech-stack__item">
+                    <span class="project-card__content__tech-stack__item__label"
+                      >Backend:</span
+                    >
+                    <span class="project-card__tech-tag">PHP</span>
+                  </div>
+                </div>
+                <div class="project-card__content__features">
+                  <span class="project-card__feature-tag">Каталог товаров</span>
+                  <span class="project-card__feature-tag">Корзина</span>
+                  <span class="project-card__feature-tag"
+                    >Адаптивный дизайн</span
+                  >
+                </div>
+              </div>
+              <div class="project-card__footer">
+                <a
+                  href="https://example-flowershop.com"
+                  target="_blank"
+                  class="project-card__footer__link"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  Перейти на сайт
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card__image-container">
+                <img
+                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                  alt="Ресторан"
+                  class="project-card__image-container__image"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__content__title">
+                  Сайт ресторана "La Piazza"
+                </h3>
+                <p class="project-card__content__description">
+                  Информационный сайт итальянского ресторана с меню, галереей и
+                  формой бронирования столиков. Интеграция с Google Maps.
+                </p>
+                <div class="project-card__content__tech-stack">
+                  <div class="project-card__content__tech-stack__item">
+                    <span class="project-card__content__tech-stack__item__label"
+                      >Frontend:</span
+                    >
+                    <span class="project-card__tech-tag">CSS</span>
+                    <span class="project-card__tech-tag">jQuery</span>
+                  </div>
+                  <div class="project-card__content__tech-stack__item">
+                    <span class="project-card__content__tech-stack__item__label"
+                      >Backend:</span
+                    >
+                    <span class="project-card__tech-tag">WordPress</span>
+                  </div>
+                </div>
+                <div class="project-card__content__features">
+                  <span class="project-card__feature-tag">Меню</span>
+                  <span class="project-card__feature-tag">Бронирование</span>
+                  <span class="project-card__feature-tag">Google Maps</span>
+                </div>
+              </div>
+              <div class="project-card__footer">
+                <a
+                  href="https://example-restaurant.com"
+                  target="_blank"
+                  class="project-card__footer__link"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  Перейти на сайт
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card__image-container">
+                <img
+                  src="./src/assets/project_img/sneakers.jpg"
+                  alt="Pointsneakers"
+                  class="project-card__image-container__image"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__content__title">
+                  Pointsneakers - магазин кроссовок
+                </h3>
+                <p class="project-card__content__description">
+                  Интернет-магазин премиальных кроссовок с каталогом товаров,
+                  фильтрами, корзиной и системой оплаты. Адаптивный дизайн для
+                  мобильных устройств.
+                </p>
+                <div class="project-card__content__tech-stack">
+                  <div class="project-card__content__tech-stack__item">
+                    <span class="project-card__content__tech-stack__item__label"
+                      >Frontend:</span
+                    >
+                    <span class="project-card__tech-tag">jQuery</span>
+                  </div>
+                  <div class="project-card__content__tech-stack__item">
+                    <span class="project-card__content__tech-stack__item__label"
+                      >Backend:</span
+                    >
+                    <span class="project-card__tech-tag">WordPress</span>
+                    <span class="project-card__tech-tag">WooCommerce</span>
+                    <span class="project-card__tech-tag">PHP</span>
+                  </div>
+                </div>
+                <div class="project-card__content__features">
+                  <span class="project-card__feature-tag">Фильтры</span>
+                  <span class="project-card__feature-tag">Система оплаты</span>
+                  <span class="project-card__feature-tag"
+                    >Адаптивный дизайн</span
+                  >
+                </div>
+              </div>
+              <div class="project-card__footer">
+                <a
+                  href="https://pointsneakers.ru/"
+                  target="_blank"
+                  class="project-card__footer__link"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  Перейти в магазин
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card__image-container">
+                <img
+                  src="./src/assets/project_img/task.jpg"
+                  alt="Taskify Screenshot"
+                  class="project-card__image-container__image"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__content__title">
+                  Taskify - менеджер задач
+                </h3>
+                <p class="project-card__content__description">
+                  Удобный инструмент для управления задачами с возможностью
+                  создания проектов, назначения сроков, приоритетов и совместной
+                  работы.
+                </p>
+                <div class="project-card__content__tech-stack">
+                  <div class="project-card__content__tech-stack__item">
+                    <span class="project-card__content__tech-stack__item__label"
+                      >Frontend:</span
+                    >
+                    <span class="project-card__tech-tag">React</span>
+                    <span class="project-card__tech-tag">Redux</span>
+                    <span class="project-card__tech-tag">SCSS</span>
+                  </div>
+                  <div class="project-card__content__tech-stack__item">
+                    <span class="project-card__content__tech-stack__item__label"
+                      >Backend:</span
+                    >
+                    <span class="project-card__tech-tag">Node.js</span>
+                    <span class="project-card__tech-tag">Express</span>
+                    <span class="project-card__tech-tag">MongoDB</span>
+                  </div>
+                </div>
+                <div class="project-card__content__features">
+                  <span class="project-card__feature-tag">Доски задач</span>
+                  <span class="project-card__feature-tag">Гибкие фильтры</span>
+                  <span class="project-card__feature-tag">Уведомления</span>
+                  <span class="project-card__feature-tag">Отчеты</span>
+                </div>
+              </div>
+              <div class="project-card__footer">
+                <a
+                  href="https://taskify.co"
+                  target="_blank"
+                  class="project-card__footer__link"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  Открыть Taskify
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card__image-container">
+                <img
+                  src="./src/assets/project_img/resipt.jpg"
+                  alt="RecipeHub"
+                  class="project-card__image-container__image"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__content__title">
+                  RecipeHub - кулинарные рецепты
+                </h3>
+                <p class="project-card__content__description">
+                  Онлайн-платформа с коллекцией рецептов. Возможность поиска по
+                  ингредиентам, сохранения любимых рецептов и создания списков
+                  покупок.
+                </p>
+                <div class="project-card__content__tech-stack">
+                  <div class="project-card__content__tech-stack__item">
+                    <span class="project-card__content__tech-stack__item__label"
+                      >Frontend:</span
+                    >
+                    <span class="project-card__tech-tag">React</span>
+                  </div>
+                  <div class="project-card__content__tech-stack__item">
+                    <span class="project-card__content__tech-stack__item__label"
+                      >Backend:</span
+                    >
+                    <span class="project-card__tech-tag">Node.js</span>
+                    <span class="project-card__tech-tag">MongoDB</span>
+                  </div>
+                </div>
+                <div class="project-card__content__features">
+                  <span class="project-card__feature-tag">10K+ рецептов</span>
+                  <span class="project-card__feature-tag"
+                    >Пошаговые инструкции</span
+                  >
+                  <span class="project-card__feature-tag">Список покупок</span>
+                </div>
+              </div>
+              <div class="project-card__footer">
+                <a
+                  href="https://www.recipehub.org/"
+                  target="_blank"
+                  class="project-card__footer__link"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  Перейти на сайт
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <script>
+      function toggleSection(sectionId) {
+        const sections = ["company-details", "project-details"];
+        const overlay = document.getElementById("experience-overlay");
+
+        sections.forEach((id) => {
+          const section = document.getElementById(id);
+          if (id === sectionId) {
+            section.classList.toggle("active");
+          } else {
+            section.classList.remove("active");
+          }
+        });
+
+        if (
+          sections.some((id) =>
+            document.getElementById(id).classList.contains("active")
+          )
+        ) {
+          overlay.classList.add("active");
+        } else {
+          overlay.classList.remove("active");
+        }
+      }
+
+      function closeSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        const overlay = document.getElementById("experience-overlay");
+        section.classList.remove("active");
+
+        if (
+          !["company-details", "project-details"].some((id) =>
+            document.getElementById(id).classList.contains("active")
+          )
+        ) {
+          overlay.classList.remove("active");
+        }
+      }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const progressBars = document.querySelectorAll(".status-progress");
+        const progressObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.style.transition = "width 1.5s ease";
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+
+        progressBars.forEach((bar) => {
+          progressObserver.observe(bar);
+        });
+
+        const burgerMenu = document.querySelector(".burger-menu");
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const overlay = document.querySelector(".overlay");
+        const body = document.body;
+
+        burgerMenu.addEventListener("click", function () {
+          this.classList.toggle("active");
+          mobileMenu.classList.toggle("active");
+          overlay.classList.toggle("active");
+          body.classList.toggle("no-scroll");
+
+          const lines = this.querySelectorAll(".burger-line");
+          if (this.classList.contains("active")) {
+            lines[0].style.transform = "rotate(45deg) translate(5px, 5px)";
+            lines[1].style.opacity = "0";
+            lines[2].style.transform = "rotate(-45deg) translate(5px, -5px)";
+          } else {
+            lines[0].style.transform = "rotate(0) translate(0)";
+            lines[1].style.opacity = "1";
+            lines[2].style.transform = "rotate(0) translate(0)";
+          }
+        });
+
+        overlay.addEventListener("click", function () {
+          burgerMenu.classList.remove("active");
+          mobileMenu.classList.remove("active");
+          this.classList.remove("active");
+          body.classList.remove("no-scroll");
+
+          const lines = burgerMenu.querySelectorAll(".burger-line");
+          lines[0].style.transform = "rotate(0) translate(0)";
+          lines[1].style.opacity = "1";
+          lines[2].style.transform = "rotate(0) translate(0)";
+        });
+
+        const sectionBtns = document.querySelectorAll(".mobile-sections-btn");
+        sectionBtns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            const sectionsList = this.nextElementSibling;
+            sectionsList.classList.toggle("active");
+
+            const arrow = this.querySelector("svg");
+            arrow.style.transform = sectionsList.classList.contains("active")
+              ? "rotate(180deg)"
+              : "rotate(0)";
+          });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute("href");
+            if (targetId === "#") return;
+
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: "smooth",
+              });
+
+              if (mobileMenu.classList.contains("active")) {
+                burgerMenu.classList.remove("active");
+                mobileMenu.classList.remove("active");
+                overlay.classList.remove("active");
+                body.classList.remove("no-scroll");
+
+                const lines = burgerMenu.querySelectorAll(".burger-line");
+                lines[0].style.transform = "rotate(0) translate(0)";
+                lines[1].style.opacity = "1";
+                lines[2].style.transform = "rotate(0) translate(0)";
+              }
+            }
+          });
+        });
+
+        let lastScroll = 0;
+        const header = document.querySelector("header");
+
+        window.addEventListener("scroll", function () {
+          const currentScroll = window.pageYOffset;
+
+          if (currentScroll <= 0) {
+            header.style.transform = "translateY(0)";
+            return;
+          }
+
+          if (
+            currentScroll > lastScroll &&
+            !header.classList.contains("scrolled-down")
+          ) {
+            header.style.transform = "translateY(-100%)";
+            header.classList.add("scrolled-down");
+          } else if (
+            currentScroll < lastScroll &&
+            header.classList.contains("scrolled-down")
+          ) {
+            header.style.transform = "translateY(0)";
+            header.classList.remove("scrolled-down");
+          }
+
+          lastScroll = currentScroll;
+        });
+
+        const navItems = document.querySelectorAll(".nav-item");
+        let activeDropdown = null;
+        let activeNavItem = null;
+        let hideTimeout = null;
+
+        navItems.forEach((item) => {
+          const dropdown = item.querySelector(".sections-dropdown");
+          const navLink = item.querySelector(".nav-link");
+
+          item.addEventListener("mouseenter", () => {
+            clearTimeout(hideTimeout);
+
+            if (activeDropdown && activeDropdown !== dropdown) {
+              activeDropdown.style.display = "none";
+              activeNavItem.classList.remove("active");
+            }
+
+            dropdown.style.display = "block";
+            item.classList.add("active");
+            activeDropdown = dropdown;
+            activeNavItem = item;
+          });
+
+          item.addEventListener("mouseleave", () => {
+            hideTimeout = setTimeout(() => {
+              dropdown.style.display = "none";
+              item.classList.remove("active");
+              if (activeDropdown === dropdown) {
+                activeDropdown = null;
+                activeNavItem = null;
+              }
+            }, 500);
+          });
+
+          dropdown.addEventListener("mouseenter", () => {
+            clearTimeout(hideTimeout);
+            item.classList.add("active");
+          });
+
+          dropdown.addEventListener("mouseleave", () => {
+            hideTimeout = setTimeout(() => {
+              dropdown.style.display = "none";
+              item.classList.remove("active");
+              if (activeDropdown === dropdown) {
+                activeDropdown = null;
+                activeNavItem = null;
+              }
+            }, 500);
+          });
+
+          dropdown.addEventListener("click", (e) => {
+            if (e.target.tagName === "A") {
+              item.classList.add("active");
+            }
+          });
+        });
+      });
+
+      const tabBtns = document.querySelectorAll(".tab-btn");
+      const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+      tabBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          tabBtns.forEach((btn) => btn.classList.remove("active"));
+          btn.classList.add("active");
+
+          const filter = btn.dataset.filter;
+
+          portfolioItems.forEach((item) => {
+            if (filter === "all" || item.dataset.tech === filter) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>

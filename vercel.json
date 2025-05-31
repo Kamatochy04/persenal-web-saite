@@ -3,6 +3,10 @@
     {
       "source": "/experience",
       "destination": "/experience.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }

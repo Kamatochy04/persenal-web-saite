@@ -2,13 +2,11 @@
   "routes": [
     {
       "src": "/experience",
-      "dest": "/experience",
-      "status": 301
+      "dest": "/experience"
     },
     {
       "src": "/",
-      "dest": "/",
-      "status": 302
+      "dest": "/"
     }
   ]
 }
